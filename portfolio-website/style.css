@@ -1,0 +1,111 @@
+
+
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+
+.content {max-width: 1300px; margin:  auto; padding: 0 80px;}
+.section {padding: 100px 0;}
+/* --------------Navbar--------- */
+.navbar {width: 100%;  position: fixed; font-family: sans-serif; padding: 15px 0; transition: all 0.3s ease;
+         z-index: 998;}
+/* navbar scrolling style */
+.stiky {background: rgb(218, 19, 174); }
+.navbar .content {display: flex; justify-content: space-between; align-items: center;}
+.navbar .logo a {font-weight: 600; color: #fff; font-size: 36px;}
+.navbar .logo a:hover {color: yellow;  transition: all 0.4s ease;}
+.navbar .menu li {display: inline-block; list-style: none;}
+.navbar .menu li a {color: #fff; font-weight: 500; font-size: 18px; margin-left: 25px;}
+.navbar .menu li a:hover {color: yellow; transition: all 0.4s ease;}
+
+/* nav hamburger */
+.nav_hamburger {font-size: 24px; color: #fff; cursor: pointer; display: none;}
+/* ------------=-Home section start----------- */
+.home {display: flex; background-image: url(./images/homeBackgroundImg.jpg); background-size: cover;
+       background-repeat: no-repeat; height: 100vh; color: #fff; min-height: 500px; object-fit: cover;}
+.home .content {margin: auto auto auto 20px;}
+.home_intro .text_1 {font-size: 27px;}
+.home_intro .text_2 {font-size: 50px; font-weight: 600; margin-left: -3px;}
+.home_intro .text_3 {font-size: 35px;}
+.home_intro .text_3 span{font-weight: bolder; font-size: 40px; color: rgb(218, 19, 174);}
+#hireMe {padding: 10px 20px; background-color: deeppink; border: 2px solid deeppink; border-radius: 5px;
+                 color: #fff; margin-top: 20px; margin: 20px 0; cursor: pointer; font-size: 16px; font-weight: bold;}
+#hireMe:hover {background: none; transition: all 0.3s ease; color: deeppink;}
+
+
+
+/* ----------------------About section start----------------- */
+
+.about_intro {display: flex; align-items: center; justify-content: space-between;}
+.section_title {text-align: center; font-weight: 600; font-size: 40px; padding-bottom: 20px; margin-bottom: 40px;
+               position: relative;}
+.section_title::before {content: ''; left: 50%; bottom: 0; width: 180px; height: 3px; background-color: #111;
+                         position: absolute; transform: translateX(-50%);}
+.col_left img {width: 400px; height: 400px; object-fit: cover; border-radius: 5px;}
+.about .col_left {width: 45%;}
+.about .col_right {width: 55%;}
+.about .col_right h4 {margin-bottom: 10px; font-size: 20px; font-weight: bolder;}
+.about .col_right span {color: deeppink; font-size: 22px; font-weight: bolder;}
+.about .col_right .cv {padding: 10px 20px; background-color: deeppink; border: 2px solid deeppink; border-radius: 5px;
+    color: #fff; margin-top: 20px; margin: 25px 0; cursor: pointer; font-size: 16px; font-weight: bold;}
+.about .col_right p {line-height: 1.7; font-size: 16px;}
+
+
+/* ------------------------Services section start-------------------------- */
+.services {background: #111; color: #fff;}
+.services_intro {display: flex; justify-content: space-between;}
+.card {width: calc(33% - 20px); background: #444; text-align: center; padding: 20px; border-radius: 5px;
+       transition: all 0.4s ease; overflow: hidden;}
+.card i {font-size: 50px; color: deeppink;}
+.card .text {font-size: 24px; font-weight: 500; margin: 10px 0;}
+.card .box {transition: all 0.3s ease;}
+.card:hover .box{transform: scale(1.1); }
+.card:hover {background: deeppink;}
+.card:hover i {color: #fff; }
+
+/* --------------------------Skills section start------------------------------ */
+.skills_intro {width: 100%;}
+.skills_intro {display: flex; justify-content: space-between;}
+.skills_intro .col_left {width: 45%;}
+.skills_intro .col_left .text {font-size: 24px; font-weight: bolder;}
+.skills_intro .col_right {width: 50%; }
+.skills_intro .col_right .info {display: flex; justify-content: space-between; padding: 10px 0;}
+.skills_intro .col_right .line {height: 5px; width: 100%; background: lightblue;}
+.readMore {padding: 10px 20px; background-color: red; border: 2px solid red; border-radius: 5px;
+    color: #fff; margin-top: 20px; margin: 20px 0; cursor: pointer; font-size: 16px; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive  media start*/
+
+/* @media (max-width:1320px){
+    .home .content {margin-left: 0;}
+    .about_intro  {display: flex; justify-content: space-between;}
+    .about_intro .col_right{width: 50%;}
+    .about_intro img {width: 300px;}
+    
+}
+
+@media (max-width:900px){
+    .nav_hamburger {display: block; z-index: 999;}
+    #hireMe {background: none;}
+    #hireMe:hover {background: deeppink; color: #fff;}
+    .content {padding: 0 50px;}
+    .navbar .menu {position: fixed; width: 100%; height: 100vh; background-color: #111; left: -100%; top: 0;
+                   transition: all 0.4s ease; padding-top: 80px;}
+    .navbar .menu_active {left: 0; }
+    .navbar .menu li {display: block; margin: 20px 0; font-size: 27px; text-align: center;}
+    .about_intro  {display: flex; flex-direction: column; }
+    
+} */

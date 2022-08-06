@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --bg-dark: #171717;
+    --bg-light: #fff;
+    --font-medium:500;
+    --font-bold:600;
+    --text-color:#fff;
+    --box-color: dodgerblue;
+    --skin-color: deeppink;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+}
+
+/* sidebar styles */
+.sidebar {
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--box-color);
+}
+
+.nav_logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.8rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_text {
+    display: block;
+    font-weight: var(--font-bold);
+    font-size: 1.125rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav_menu {
+    position: fixed;
+    transform: rotate(-90deg) translateX(-100%);
+    width: 100vh;
+    transform-origin: left top;
+}
+
+.menu {
+    display: flex;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: -2px auto 0 auto;
+    list-style: none;
+}
+.nav_link {
+    height: 100%;
+    line-height: 100px;
+    padding: 0 1rem;
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .4s;
+    float: right;
+}
+
+.nav_link.active_link,.nav_link:hover{
+    color: var(--skin-color);
+}
+
+.nav_link.active_link::after, .nav_link:hover::after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btn_share {
+    position: absolute;
+    bottom: 1.8rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.social_share {
+    font-size: 1.5rem;
+}

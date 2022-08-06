@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body       {font-family: 'Oswald', sans-serif; background-color: rgb(219, 219, 219);}
+.container       {width: 80%; margin: auto;}
+.content      { width: 100%; height: 70vh; display: flex; align-items: center; justify-content: center;}
+
+/* ---------  header section --------- */
+
+header      { background-color: #171717; padding: 10px 0;}
+.header_content     {display: flex; justify-content: space-between; align-items: center;}
+.brand      { font-size: 32px; text-decoration: none; color: #fff;}
+nav ul      { display: flex;}
+
+/* nav ul #user_info */
+#user_info     {display: none;}
+nav ul li      { list-style: none;}
+nav ul li a    { text-decoration: none; display: block; color: #fff; min-width: 50px; padding: 5px; margin: 0 5px;}
+
+
+/* ---------form section styles--------- */
+
+.form_section     { position: absolute; top: 50%; left: 50%;  transform: translate(-50%,-50%);  width: 40%; padding: 20px;
+                  text-align: center;}
+.form_section > h2      { font-size: 50px; color: white; letter-spacing: 2px; background-color: dodgerblue;}
+.form_section > form > Input   { display: block; width: 100%; padding: 10px; margin: 10px 0; border: 1px solid gray;}
+.form_section > form > input[type=submit]     { font-size: 24px; text-transform: uppercase;  cursor: pointer;}
+.form_section > form > input[type=submit]:hover    {opacity: 0.8;}
+
+
+/* ------------ products ---------------- */
+.products         { width: 60%; margin: 10px 0;}
+.product_item      { display: flex; width: 100%; border: 1px solid gray; margin: 10px 0; background-color: #fff;}
+.product_item_img_container   { width: 25%; margin-right: 10px; height: 200px;}
+.product_item_img_container > img   { width: 100%; object-fit: cover; height: 100%;}
+.product_item_action     {  margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between;}
+.add_to_cart      { display: block; background-color: darkgreen; color: white; padding: 10px 20px; border: none;
+                cursor: pointer; font-size: 14px;  font-family: sans-serif;}
+
+
+
